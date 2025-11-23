@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card p-4 shadow col-md-4 offset-md-4">
+<h4>Görevi Düzenle</h4>
+<form method="POST">
+  <label>Başlık</label>
+  <input name="baslik" required class="form-control mb-2" value="{{ task.baslik }}">
+
+  <label>Açıklama</label>
+  <textarea name="aciklama" class="form-control mb-2">{{ task.aciklama }}</textarea>
+
+  <label>Tarih</label>
+  <input type="date" name="tarih" class="form-control mb-2" value="{{ task.tarih }}">
+
+  <label>Renk</label>
+  <input type="color" name="renk" value="{{ task.renk or '#2563eb' }}" class="form-control form-control-color mb-3">
+
+  <button class="btn btn-warning w-100">Güncelle</button>
+</form>
+</div>
+{% endblock %}

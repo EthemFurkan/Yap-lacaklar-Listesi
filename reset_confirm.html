@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="glass shadow col-md-4 offset-md-4">
+<h4>Kod Doğrulama</h4>
+<form method="POST">
+  <input class="form-control mb-2" name="code" placeholder="Kod" required>
+  <input class="form-control mb-2" type="password" name="newpass" placeholder="Yeni şifre" required>
+  <button class="btn btn-success w-100">Şifreyi Sıfırla</button>
+</form>
+</div>
+{% endblock %}

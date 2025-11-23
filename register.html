@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="glass shadow col-md-4 offset-md-4">
+<h4>Kayıt Ol</h4>
+<form method="POST">
+  <input class="form-control mb-2" name="username" placeholder="Kullanıcı adı" required>
+  <input type="password" class="form-control mb-2" name="password" placeholder="Şifre" required>
+  <button class="btn btn-success w-100">Kayıt Ol</button>
+</form>
+</div>
+{% endblock %}

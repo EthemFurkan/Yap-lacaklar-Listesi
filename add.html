@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="glass shadow mx-auto" style="max-width:600px;">
+<h4>Görev Ekle</h4>
+<form method="POST">
+  <label>Başlık</label>
+  <input name="baslik" required class="form-control mb-2">
+
+  <label>Açıklama</label>
+  <textarea name="aciklama" class="form-control mb-2"></textarea>
+
+  <label>Tarih</label>
+  <input type="date" name="tarih" class="form-control mb-2">
+
+  <label>Renk</label>
+  <input type="color" name="renk" value="#2563eb" class="form-control form-control-color mb-3">
+
+  <button class="btn btn-primary w-100">Ekle</button>
+</form>
+</div>
+{% endblock %}
